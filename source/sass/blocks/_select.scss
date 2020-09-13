@@ -1,0 +1,76 @@
+
+.select__selected {
+    box-sizing: initial;
+    user-select: none;
+    min-width: 30px;
+    padding: 8px 30px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../img/svg/arrow.svg");
+        background-repeat: 0;
+        background-size: cover;
+        width: 12px;
+        height: 8px;
+        fill: white;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        z-indeX: 50;
+        transform-origin: center;
+        transition: all .2s linear;
+    }
+}
+
+.select__selected--active {
+    &::before {
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
+
+.select {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-right: 1px solid #C4C4C4;
+    position: relative;
+}
+
+
+.select__list {
+    position: absolute;
+    z-index: 900;
+    right: 10px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s linear;
+    transform: translateY(30%);
+}
+
+.select__list--active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.select__item {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover{
+        color: #FFB548;
+    }
+}

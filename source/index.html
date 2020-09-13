@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Site</title>
+    <meta name="description" content="Game Site Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+    <div class="page__intro-screen intro-screen">
+        <header class="page-header">
+            <div class="container">
+                <div class="page-header__content">
+                    <a href="#" class="page-logotype">
+                        <img src="img/logotype/site.png" alt="SOS">
+                    </a>
+                    <nav class="page-navigation page-header__nav">
+                        <ul class="page-navigation__list">
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">Main</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">About</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">Game Features</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">System Requirements</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">Qoutes</a></li>
+                        </ul>
+                    </nav>
+                    <div class="page-header__right">
+                        <div class="select select-language">
+                            <div class="select__selected">
+                                Eng
+                            </div>
+                            <ul class="select__list">
+                                <li class="select__item">Rus</li>
+                                <li class="select__item">Fra</li>
+                                <li class="select__item">Deu</li>
+                            </ul>
+                        </div>
+                        <div class="page-header__links">
+                            <a href="#" class="xbox-link">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#steam-icon"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="steam-link">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#xbox-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <button class="menu-button" onclick="this.classList.toggle('menu-button--active')">
+                            <svg class="menu-button__svg" viewBox="0 0 100 100" width="50">
+                                <path
+                                      class="menu-button__top"
+                                      d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                                <path
+                                      class="menu-button__middle"
+                                      d="m 70,50 h -40" />
+                                <path
+                                      class="menu-button__bottom"
+                                      d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="intro-screen__content">
+                <hgroup class="page-titles intro-screen__titles">
+                    <h1 class="page-titles__title">Survive at all costs</h1>
+                    <h2 class="page-titles__subtitle">Experience new social battle royale game</h2>
+                </hgroup>
+                <a href="#" class="button intro-screen__button">
+                    <span class="button__text">Buy Now on Steam</span>
+                    <div class="button__price">$14.99</div>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="intro-screen__link">The story</a> 
+    </div>
+    <main class="page-main">
+        <section class="s-about" id="about">
+            <div class="container">
+                <div class="s-about__content">
+                    <div class="s-about__left">
+                        <hgroup class="page-titles s-about__titles">
+                            <h3 class="page-titles__subtitle">What is SOS?</h3>
+                            <h2 class="page-titles__title">Social battle royale game</h2>
+                        </hgroup>
+                        <div class="s-about__text">
+                            <p class="s-about__descr">
+                                Each round, you and 15 other contestants compete to
+                                escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+                                solo or form friendships with others to escape? 
+                            </p>
+                            <p class="s-about__descr">
+                                Making the right decisions could be the difference between <span class="g-underline">life and death .</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="s-about__slider">
+                        <div class="slider">
+                            <div class="slider__item slider__item--big slider__item--active" data-index="0">
+                                <img src="img/slider/1.jpg" alt="">
+                            </div>
+                            <div class="slider__item slider__item--middle slider__item--center" data-index="1">
+                                <img src="img/slider/2.jpg" alt="">
+                            </div>
+                            <div class="slider__item slider__item--small slider__item--right" data-index="2">
+                                <img src="img/slider/3.jpg" alt="">
+                            </div>
+                            <button class="slider__next">
+                                <img src="img/svg/scroll-down.svg" alt="">
+                            </button>
+                            <ul class="slider__dots">
+                                <li class="slider__dot slider__dot--active"></li>
+                                <li class="slider__dot"></li>
+                                <li class="slider__dot"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-features">
+            <div class="container">
+                <div class="s-features__content">
+                    <hgroup class="page-titles s-features__titles">
+                        <h3 class="page-titles__subtitle">What’s so special?</h3>
+                        <h2 class="page-titles__title">Features</h2>
+                    </hgroup>
+                    <ul class="s-features__list">
+                        <li class="s-features__item s-features__item--active">
+                            <b class="s-features__head">Survive at all costs</b>
+                            <p class="s-features__body">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.
+                            </p>
+                        </li>
+                        <li class="s-features__item">
+                            <b class="s-features__head">Create allies and enemies</b>
+                            <p class="s-features__body">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.
+                            </p>
+                        </li>
+                        <li class="s-features__item">
+                            <b class="s-features__head">Impress the audience</b>
+                            <p class="s-features__body">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s-requirements">
+            <div class="container">
+                <div class="s-requirements__content">
+                    <hgroup class="page-titles s-requirements__title">
+                        <h3 class="page-titles__subtitle">Can My Computer Run this game?</h3>
+                        <h2 class="page-titles__title">System requirements</h2>
+                    </hgroup>
+                    <div class="s-requirements__table table-req">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b class="table-req__title">OS:</b>
+                                        <p class="table-req__descr">Windows 7 64-bit only
+                                            (No OSX support at this time)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <b class="table-req__title">Processor:</b>
+                                        <p class="table-req__descr">
+                                            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b class="table-req__title">Memory:</b>
+                                        <p class="table-req__descr">
+                                            8 GB RAM
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <b class="table-req__title">Storage:</b>
+                                        <p class="table-req__descr">
+                                            8 GB available space
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <b class="table-req__title">Graphics:</b>
+                                        <p class="table-req__descr">
+                                            NVIDIA GeForce GTX 660 2GB or 
+                                            AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-qoutes">
+            <div class="container">
+                <div class="s-qoutes__content">
+                    <div class="s-qoutes__left">
+                        <hgroup class="page-titles s-qoutes__title">
+                            <h3 class="page-titles__subtitle">What people think?</h3>
+                            <h2 class="page-titles__title">Press quotes</h2>
+                        </hgroup>
+                        <p class="s-qoutes__descr">
+                            Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
+                        </p>
+                        <a href="#" class="button s-qoutes__button">
+                            <span class="button__text">Read more testimonials</span>
+                        </a>
+                    </div>
+                    <div class="s-qoutes__right">
+                        <blockquote class="feedback">
+                            <div class="feedback__header">
+                                <div class="feedback__author-img">
+                                    <img src="img/feedback/1.png" alt="Evan Lahti">
+                                </div>
+                               <div class="feedback__info">
+                                   <a href="#">
+                                        <city class="feedback__author-name">Evan Lahti</city>
+                                   </a>
+                                    <span class="feedback__post">PC Gamer</span>
+                               </div>
+                               <a href="#" class="feedback__link">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            </div>
+                            <div class="feedback__body">
+                                <p class="feedback__text">
+                                    "One of my gaming highlights of the year"
+                                </p>
+                                <time class="feedback__data" datetime="2018-10-18">October 18, 2018</time>
+                            </div>
+                        </blockquote>
+                        <blockquote class="feedback feedback--left">
+                            <div class="feedback__header">
+                                <div class="feedback__author-img">
+                                    <img src="img/feedback/2.png" alt="Jada Griffin ">
+                                </div>
+                               <div class="feedback__info">
+                                   <a href="#">
+                                        <city class="feedback__author-name">Jada Griffin </city>
+                                   </a>
+                                    <span class="feedback__post">Nerdreactor</span>
+                               </div>
+                               <a href="#" class="feedback__link">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            </div>
+                            <div class="feedback__body">
+                                <p class="feedback__text">
+                                    “The next big thing in the world of streaming and survival games.”
+                                </p>
+                                <time class="feedback__data" datetime="2018-12-21">December 21, 2018</time>
+                            </div>
+                        </blockquote>
+                        <blockquote class="feedback">
+                            <div class="feedback__header">
+                                <div class="feedback__author-img">
+                                    <img src="img/feedback/3.png" alt="Aaron Williams ">
+                                </div>
+                               <div class="feedback__info">
+                                   <a href="#">
+                                        <city class="feedback__author-name">Aaron Williams </city>
+                                   </a>
+                                    <span class="feedback__post">Uproxx</span>
+                               </div>
+                               <a href="#" class="feedback__link">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                            </div>
+                            <div class="feedback__body">
+                                <p class="feedback__text">
+                                    “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                                </p>
+                                <time class="feedback__data" datetime="2018-12-24">December 24, 2018</time>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="screen-end">
+        <section class="s-subscribe">
+            <div class="container">
+                <div class="s-subscribe__content">
+                    <hgroup class="page-titles s-subscribe__title">
+                        <h3 class="page-titles__subtitle">Want to stay in touch?</h3>
+                        <h2 class="page-titles__title">Newsletter Subscribe</h2>
+                    </hgroup>
+                    <p class="s-subscribe__descr">
+                        In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+                    </p>
+                    <form action="#" class="form">
+                        <div class="form__input-wrapper">
+                            <input type="text" class="form__input" value="aliciliniavopir@gmail.com">
+                        </div>
+                        <button class="form__button button">Subscribe now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="page-footer__top">
+                    <a href="#" class="page-footer__logo page-logotype page-logotype--big">
+                        <img src="img/logotype/site.png" alt="SOS">
+                    </a>
+                    <nav class="page-navigation page-footer__nav">
+                        <ul class="page-navigation__list">
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">Main</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">About</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">Game Features</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">System Requirements</a></li>
+                            <li class="page-navigation__item"><a href="#" class="page-navigation__link">Qoutes</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="socials page-footer__socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--facebook">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--twitter">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--youtube">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link socials__link--twitch">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.svg#twitch"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__bottom">
+                    <div class="copyright page-footer__copyright">
+                        © 2018 Outpost Games, Inc. All Rights Reserved
+                    </div>
+                    <ul class="rules">
+                        <li class="rules__item"><a href="#" class="rules__link">Privacy Policy</a></li>
+                        <li class="rules__item"><a href="#" class="rules__link">Terms of Services</a></li>
+                        <li class="rules__item"><a href="#" class="rules__link">Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

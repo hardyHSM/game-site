@@ -1,0 +1,25 @@
+.s-subscribe {
+    background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%),url("../img/subscribe/bg.png");
+    background-repeat: no-repeat;
+    background-size: 445px;
+    padding-top: 225px;
+    padding-bottom: 135px;
+    background-position-x: 25%;
+    background-position-y:  center;
+}
+
+.s-subscribe__content {
+    max-width: 660px;
+    margin-left: auto;
+}
+
+.s-subscribe__title {
+    margin-bottom: 50px;
+    .page-titles__subtitle {
+        margin-bottom: 15px;
+    }
+}
+
+.s-subscribe__descr {
+    margin-bottom: 60px;
+}

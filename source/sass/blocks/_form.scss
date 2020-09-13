@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 27px 20px 9px 20px;
+    background: none;
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    position: relative;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFB548;
+}
+
+.form__button {
+    max-width: 260px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.form__input-wrapper {
+    position: relative;
+    flex-grow: 1;
+    &::before {
+        content: "Your email address";
+        position: absolute;
+        left: 20px;
+        top:10px;
+        font-family: Open Sans;
+        font-size: 14px;
+        line-height: 19px;
+        z-index: 50;
+        opacity: 0.5;
+        color: #FFFFFF;
+    }
+    margin-right: 10px;
+}

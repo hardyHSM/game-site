@@ -1,0 +1,39 @@
+.s-qoutes {
+    background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%) ,url("../img/qoutes/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.s-qoutes__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s-qoutes__left {
+    max-width: 410px;
+}
+
+.s-qoutes__title {
+    .page-titles__subtitle {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+}
+
+.s-qoutes__descr {
+    margin-bottom: 60px;
+}
+
+
+.s-qoutes__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

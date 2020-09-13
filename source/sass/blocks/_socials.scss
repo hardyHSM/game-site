@@ -1,0 +1,59 @@
+.socials {
+    display: flex;
+
+}
+
+.socials__item {
+    margin-right: 50px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.socials__link {
+    transition: all .3s linear;
+}
+
+.socials__link--facebook {
+    svg {
+        width: 9.23px;
+        height: 18.99px;
+        fill: #fff;
+        &:hover {
+            fill: rgb(48, 48, 134);
+        }
+    }
+}
+
+.socials__link--twitch {
+    svg {
+        width: 19.15px;
+        height: 18.16px;
+        fill: #fff;
+        &:hover {
+            fill: purple;
+        }
+    }
+}
+
+.socials__link--youtube {
+    svg {
+        width: 24px;
+        height: 17px;
+        fill: #fff;
+        &:hover {
+            fill: red;
+        }
+    }
+}
+
+.socials__link--twitter {
+    svg {
+        width: 21.01px;
+        height: 16px;
+        fill: #fff;
+        &:hover {
+            fill: aqua;
+        }
+    }
+}
